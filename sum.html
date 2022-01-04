@@ -4,12 +4,12 @@
      </head>
      <body>
           <input type="number" name="first" id="first">
-          <input type="number" name="second" id="second">
+          <input type="number" name="second" id="second"><br><br>
           <button onclick="calculate('+')">+</button>
           <button onclick="calculate('-')">-</button>
           <button onclick="calculate('*')">*</button>
-          <button onclick="calculate('/')">/</button>
-          <input type="text" disabled id="answer">
+          <button onclick="calculate('/')">/</button><br><br>
+          <label for="">Answer = </label><input type="text" disabled id="answer">
 
           <script>
                function calculate(operation){
@@ -38,7 +38,7 @@
                               break;
                     
                          default:
-                              ans ="error";
+                              ans ="error!!!";
                               break;
                     }
                     var setAns = document.getElementById('answer');
